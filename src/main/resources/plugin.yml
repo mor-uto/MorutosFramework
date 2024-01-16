@@ -1,0 +1,4 @@
+name: MorutosFramework
+version: '${project.version}'
+main: net.moruto.morutosframework.MorutosFramework
+api-version: '1.17'
