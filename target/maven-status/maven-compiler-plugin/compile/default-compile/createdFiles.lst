@@ -1,9 +1,12 @@
+net\moruto\morutosframework\menu\MenuHolder.class
+net\moruto\morutosframework\menu\MenusManager.class
 net\moruto\morutosframework\listener\ListenersManager.class
-net\moruto\morutosframework\plugin\annotations\PluginProperties.class
+net\moruto\morutosframework\menu\Menu.class
 net\moruto\morutosframework\plugin\MorutosPlugin.class
+net\moruto\morutosframework\utils\ColorUtils.class
+net\moruto\morutosframework\https\Requests.class
+net\moruto\morutosframework\menu\MenuListener.class
 net\moruto\morutosframework\utils\ReflectionUtils.class
 net\moruto\morutosframework\listener\MListener.class
-net\moruto\morutosframework\plugin\annotations\Plugin.class
-net\moruto\morutosframework\utils\ColorUtils.class
 net\moruto\morutosframework\MorutosFramework.class
-net\moruto\morutosframework\https\Requests.class
+net\moruto\morutosframework\utils\ItemBuilder.class

@@ -58,10 +58,6 @@
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
-      <repository>
-          <id>jitpack.io</id>
-          <url>https://jitpack.io</url>
-      </repository>
   </repositories>
 
   <dependencies>
@@ -73,9 +69,17 @@
       </dependency>
 
       <dependency>
-          <groupId>com.github.Mor-uto</groupId>
-          <artifactId>MorutosFramework</artifactId>
-          <version>1.0</version>
+          <groupId>org.reflections</groupId>
+          <artifactId>reflections</artifactId>
+          <version>0.10.2</version>
       </dependency>
   </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Mor-uto Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
+        </repository>
+    </distributionManagement>
 </project>

@@ -4,11 +4,22 @@ import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.util.List;
+
 public class ItemBuilder {
     public static ItemStack createBasic(Material mat, String name) {
         ItemStack item = new ItemStack(mat, 1);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ColorUtils.trans(name));
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    public static ItemStack createBasicWithColor(Material mat, String name, List<String> lore) {
+        ItemStack item = new ItemStack(mat, 1);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(ColorUtils.trans(name));
+        meta.setLore(lore);
         item.setItemMeta(meta);
         return item;
     }
