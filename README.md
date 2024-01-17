@@ -7,23 +7,23 @@ an open-source and easy to use framework that provides a lot of this, at first i
 ## Installation:
 maven
 ```xml
-        <repository>
-            <id>github</id>
-            <name>GitHub Mor-uto Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
-        </repository>
+<repository>
+        <id>github</id>
+        <name>GitHub Mor-uto Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
+</repository>
 
-      <dependency>
-          <groupId>net.moruto</groupId>
-          <artifactId>MorutosFramework</artifactId>
-          <version>VERSION</version>
-          <scope>compiled</scope>
-      </dependency>
+<dependency>
+        <groupId>net.moruto</groupId>
+        <artifactId>MorutosFramework</artifactId>
+        <version>VERSION</version>
+        <scope>compiled</scope>
+</dependency>
 ```
 
 ## Features:
-easy to use
-auto register commands/listeners
-a lot of utilities for a lot of things
-simplified reflection
-more comming soon...
+- easy to use
+- auto register commands/listeners
+- a lot of utilities for a lot of things
+- simplified reflection & http requests
+- more comming soon...
