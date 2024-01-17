@@ -17,7 +17,7 @@ maven
         <groupId>net.moruto</groupId>
         <artifactId>MorutosFramework</artifactId>
         <version>VERSION</version>
-        <scope>compiled</scope>
+        <scope>compile</scope>
 </dependency>
 ```
 
