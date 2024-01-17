@@ -1,0 +1,14 @@
+package net.moruto.morutosframework.utils;
+
+import net.moruto.morutosframework.plugin.MorutosPlugin;
+import org.bukkit.Bukkit;
+
+public class ConsoleUtils {
+    public static void sendMessage(String str, boolean color) {
+        Bukkit.getConsoleSender().sendMessage(color ? ColorUtils.trans(str) : str);
+    }
+
+    public static void runCommand(String command) {
+        Bukkit.getScheduler().runTask(MorutosPlugin.getInstance(), () -> Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), command.replace("/", "")));
+    }
+}
