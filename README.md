@@ -1,4 +1,4 @@
-# MorutosFramework pre 1.0
+# MorutosFramework
 WIP framework (work in progress)
 
 ## About:
@@ -16,14 +16,10 @@ maven
 <dependency>
         <groupId>net.moruto</groupId>
         <artifactId>MorutosFramework</artifactId>
-        <version>VERSION</version>
+        <version>1.0</version>
         <scope>compile</scope>
 </dependency>
 ```
 
-## Features:
-- easy to use
-- auto register commands/listeners
-- a lot of utilities for a lot of things
-- simplified reflection & http requests
-- more comming soon...
+## Usage
+check the wiki to learn how to use it
