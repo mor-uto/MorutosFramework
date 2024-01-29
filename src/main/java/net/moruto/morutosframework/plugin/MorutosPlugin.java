@@ -1,6 +1,7 @@
 package net.moruto.morutosframework.plugin;
 
 import net.moruto.morutosframework.command.CommandsManager;
+import net.moruto.morutosframework.command.MCommand;
 import net.moruto.morutosframework.listener.ListenersManager;
 import net.moruto.morutosframework.listener.MListener;
 import net.moruto.morutosframework.menu.MenusManager;
@@ -32,6 +33,9 @@ public abstract class MorutosPlugin extends JavaPlugin {
     public abstract void disable();
     public abstract String getPrefix();
 
+    public void registerCommand(MCommand command) {
+        commandsManager.register(command);
+    }
     public void registerListener(MListener listener) {
         listenersManager.register(listener);
     }

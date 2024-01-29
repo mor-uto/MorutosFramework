@@ -34,6 +34,10 @@ public abstract class Menu implements InventoryHolder {
         menuHolder.getOwner().openInventory(inventory);
     }
 
+    public int getSize() {
+        return size;
+    }
+
     public void close() {
         menuHolder.getOwner().closeInventory();
     }

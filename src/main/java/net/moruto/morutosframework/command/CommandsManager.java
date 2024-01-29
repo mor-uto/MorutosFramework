@@ -1,6 +1,5 @@
 package net.moruto.morutosframework.command;
 
-import net.moruto.morutosframework.command.MCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandMap;
 
