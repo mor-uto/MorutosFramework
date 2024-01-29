@@ -5,6 +5,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 public class ReflectionUtils {
+    private ReflectionUtils() {}
+
     public static Method getPrivateMethod(Class<?> clazz, String methodName, Class<?>... parameters) {
         try {
             Method method = clazz.getDeclaredMethod(methodName, parameters);

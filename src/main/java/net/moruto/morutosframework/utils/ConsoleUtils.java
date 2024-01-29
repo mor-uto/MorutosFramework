@@ -4,8 +4,11 @@ import net.moruto.morutosframework.plugin.MorutosPlugin;
 import org.bukkit.Bukkit;
 
 public class ConsoleUtils {
-    public static void sendMessage(String str, boolean color) {
-        Bukkit.getConsoleSender().sendMessage(color ? ColorUtils.trans(str) : str);
+    private ConsoleUtils() {}
+
+
+    public static void sendMessage(String str, boolean useColor) {
+        Bukkit.getConsoleSender().sendMessage(useColor ? ColorUtils.trans(str) : str);
     }
 
     public static void runCommand(String command) {

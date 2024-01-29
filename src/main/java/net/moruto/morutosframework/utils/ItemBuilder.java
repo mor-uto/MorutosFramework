@@ -7,6 +7,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.List;
 
 public class ItemBuilder {
+    private ItemBuilder() {}
+
     public static ItemStack createBasic(Material mat, String name) {
         ItemStack item = new ItemStack(mat, 1);
         ItemMeta meta = item.getItemMeta();
@@ -15,7 +17,7 @@ public class ItemBuilder {
         return item;
     }
 
-    public static ItemStack createBasicWithColor(Material mat, String name, List<String> lore) {
+    public static ItemStack createBasicWithLore(Material mat, String name, List<String> lore) {
         ItemStack item = new ItemStack(mat, 1);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ColorUtils.trans(name));
