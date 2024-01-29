@@ -1,5 +1,6 @@
 package net.moruto.morutosframework.menu;
 
+import net.moruto.morutosframework.plugin.MorutosPlugin;
 import net.moruto.morutosframework.utils.ColorUtils;
 
 import java.util.ArrayList;
@@ -8,9 +9,9 @@ public class MenusManager {
     private final ArrayList<Menu> menus = new ArrayList<>();
 
     public MenusManager() {
-        if (!menus.isEmpty()) {
+        if (menus.size() != 0) {
             MenuListener menuListener = new MenuListener();
-            menuListener.register();
+            MorutosPlugin.getInstance().registerListener(menuListener);
         }
     }
 

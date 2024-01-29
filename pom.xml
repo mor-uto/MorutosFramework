@@ -67,12 +67,6 @@
           <version>1.17.1-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
-
-      <dependency>
-          <groupId>org.reflections</groupId>
-          <artifactId>reflections</artifactId>
-          <version>0.10.2</version>
-      </dependency>
   </dependencies>
 
     <distributionManagement>
