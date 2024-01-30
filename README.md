@@ -19,14 +19,6 @@ maven
         <version>1.0</version>
         <scope>compile</scope>
 </dependency>
-
-<distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>GitHub Mor-uto Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
-   </repository>
-</distributionManagement>
 ```
 
 ## Usage
