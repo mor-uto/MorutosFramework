@@ -13,49 +13,50 @@ import org.bukkit.inventory.ItemStack;
 public abstract class Menu implements InventoryHolder {
     private final MenuHolder menuHolder;
     private Inventory inventory;
-    private final ItemStack FILLER_GLASS = ItemBuilder.createBasic(Material.GRAY_STAINED_GLASS_PANE, "");
+    private final ItemStack FILLER_GLASS;
     private final String name;
     private final int size;
 
     public Menu(MenuHolder menuHolder, String name, int size) {
+        this.FILLER_GLASS = ItemBuilder.createBasic(Material.GRAY_STAINED_GLASS_PANE, "");
         this.menuHolder = menuHolder;
         this.name = name;
         this.size = size;
-
         MorutosPlugin.getInstance().getMenusManager().addMenu(this);
     }
 
-    public abstract void handleMenu(InventoryClickEvent event);
+    public abstract void handleMenu(InventoryClickEvent var1);
 
     public abstract void setMenuItems();
 
     public void open() {
-        inventory = Bukkit.createInventory(this, size, ColorUtils.trans(name));
+        this.inventory = Bukkit.createInventory(this, this.size, ColorUtils.trans(this.name));
         this.setMenuItems();
-        menuHolder.getOwner().openInventory(inventory);
+        this.menuHolder.getOwner().openInventory(this.inventory);
     }
 
     public int getSize() {
-        return size;
+        return this.size;
     }
 
     public void close() {
-        menuHolder.getOwner().closeInventory();
+        this.menuHolder.getOwner().closeInventory();
     }
 
     public Inventory getInventory() {
-        return inventory;
+        return this.inventory;
     }
 
     public void setFillerGlass() {
-        for (int i = 0; i < size; i++) {
-            if (inventory.getItem(i) == null) {
-                inventory.setItem(i, FILLER_GLASS);
+        for(int i = 0; i < this.size; ++i) {
+            if (this.inventory.getItem(i) == null) {
+                this.inventory.setItem(i, this.FILLER_GLASS);
             }
         }
+
     }
 
     public String getName() {
-        return ColorUtils.trans(name);
+        return ColorUtils.trans(this.name);
     }
 }

@@ -5,7 +5,6 @@ import net.moruto.morutosframework.command.MCommand;
 import net.moruto.morutosframework.listener.ListenersManager;
 import net.moruto.morutosframework.listener.MListener;
 import net.moruto.morutosframework.menu.MenusManager;
-import net.moruto.morutosframework.utils.ReflectionUtils;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public abstract class MorutosPlugin extends JavaPlugin {
@@ -14,42 +13,43 @@ public abstract class MorutosPlugin extends JavaPlugin {
     private CommandsManager commandsManager;
 
     public static MorutosPlugin getInstance() {
-        return JavaPlugin.getPlugin(MorutosPlugin.class);
+        return (MorutosPlugin)JavaPlugin.getPlugin(MorutosPlugin.class);
     }
 
-    @Override
     public void onEnable() {
-        listenersManager = new ListenersManager();
-        menusManager = new MenusManager();
-        commandsManager = new CommandsManager();
-        enable();
+        this.listenersManager = new ListenersManager();
+        this.menusManager = new MenusManager();
+        this.commandsManager = new CommandsManager();
+        this.enable();
     }
 
-    @Override
     public void onDisable() {
-        disable();
+        this.disable();
     }
 
     public abstract void enable();
+
     public abstract void disable();
+
     public abstract String getPrefix();
 
     public void registerCommand(MCommand command) {
-        commandsManager.register(command);
+        this.commandsManager.register(command);
     }
+
     public void registerListener(MListener listener) {
-        listenersManager.register(listener);
-    }
-
-    public CommandsManager getCommandsManager() {
-        return commandsManager;
-    }
-
-    public MenusManager getMenusManager() {
-        return menusManager;
+        this.listenersManager.register(listener);
     }
 
     public ListenersManager getListenersManager() {
-        return listenersManager;
+        return this.listenersManager;
+    }
+
+    public MenusManager getMenusManager() {
+        return this.menusManager;
+    }
+
+    public CommandsManager getCommandsManager() {
+        return this.commandsManager;
     }
 }
