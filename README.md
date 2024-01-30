@@ -23,8 +23,8 @@ maven
 <distributionManagement>
    <repository>
      <id>github</id>
-     <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+     <name>GitHub Mor-uto Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
    </repository>
 </distributionManagement>
 ```
