@@ -8,19 +8,18 @@ import java.util.List;
 
 public class ListenersManager {
     private final List<MListener> listeners = new ArrayList<>();
-    public void addListener(MListener listener) {
-        listeners.add(listener);
-    }
-    public void removeListener(MListener listener) {
-        listeners.remove(listener);
-    }
-
-    public List<MListener> getListeners() {
-        return listeners;
-    }
 
     public void register(MListener listener) {
         listeners.add(listener);
         Bukkit.getPluginManager().registerEvents(listener, MorutosPlugin.getInstance());
+    }
+
+    public void unregister(MListener listener) {
+        listeners.remove(listener);
+        listener.unregister();
+    }
+
+    public List<MListener> getListeners() {
+        return listeners;
     }
 }

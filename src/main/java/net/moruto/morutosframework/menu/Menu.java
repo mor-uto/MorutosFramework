@@ -21,6 +21,7 @@ public abstract class Menu implements InventoryHolder {
         this.menuHolder = menuHolder;
         this.name = name;
         this.size = size;
+
         MorutosPlugin.getInstance().getMenusManager().addMenu(this);
     }
 

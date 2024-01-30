@@ -6,7 +6,7 @@ import java.net.URL;
 
 public class Requests {
     public static RequestResponse sendHttpRequest(RequestOptions options) throws IOException {
-        URL url = new URL(options.getUrl());
+        URL url = new URL(options.getUrlAsString());
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
         switch (options.getRequestType()) {
@@ -15,8 +15,6 @@ public class Requests {
             case DELETE -> connection.setRequestMethod("DELETE");
         }
 
-        RequestResponse requestResponse = new RequestResponse(connection);
-
-        return requestResponse;
+        return new RequestResponse(connection);
     }
 }

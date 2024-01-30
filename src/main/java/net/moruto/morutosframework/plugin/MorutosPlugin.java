@@ -5,6 +5,7 @@ import net.moruto.morutosframework.command.MCommand;
 import net.moruto.morutosframework.listener.ListenersManager;
 import net.moruto.morutosframework.listener.MListener;
 import net.moruto.morutosframework.menu.MenusManager;
+import net.moruto.morutosframework.utils.ReflectionUtils;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public abstract class MorutosPlugin extends JavaPlugin {
@@ -40,15 +41,15 @@ public abstract class MorutosPlugin extends JavaPlugin {
         listenersManager.register(listener);
     }
 
-    public ListenersManager getListenersManager() {
-        return listenersManager;
+    public CommandsManager getCommandsManager() {
+        return commandsManager;
     }
 
     public MenusManager getMenusManager() {
         return menusManager;
     }
 
-    public CommandsManager getCommandsManager() {
-        return commandsManager;
+    public ListenersManager getListenersManager() {
+        return listenersManager;
     }
 }

@@ -1,5 +1,6 @@
 package net.moruto.morutosframework.https;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class RequestOptions {
@@ -18,10 +19,13 @@ public class RequestOptions {
         return requestType;
     }
 
-    public String getUrl() {
-        return url;
+    public URL getUrl() throws MalformedURLException {
+        return new URL(url);
     }
 
+    public String getUrlAsString() {
+        return url;
+    }
 
 
     public enum requestType {
