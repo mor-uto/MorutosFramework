@@ -19,6 +19,14 @@ maven
         <version>1.0</version>
         <scope>compile</scope>
 </dependency>
+
+<distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub OWNER Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
+   </repository>
+</distributionManagement>
 ```
 
 ## Usage
