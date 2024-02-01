@@ -7,13 +7,14 @@ import net.moruto.morutosframework.listener.MListener;
 import net.moruto.morutosframework.menu.MenusManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+
 public abstract class MorutosPlugin extends JavaPlugin {
     private ListenersManager listenersManager;
     private MenusManager menusManager;
     private CommandsManager commandsManager;
 
     public static MorutosPlugin getInstance() {
-        return (MorutosPlugin)JavaPlugin.getPlugin(MorutosPlugin.class);
+        return JavaPlugin.getPlugin(MorutosPlugin.class);
     }
 
     public void onEnable() {
