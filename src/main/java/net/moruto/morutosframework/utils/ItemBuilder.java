@@ -6,8 +6,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class ItemBuilder {
-    private ItemBuilder() {
-    }
+    private ItemBuilder() {}
 
     public static ItemStack createBasic(Material mat, String name) {
         ItemStack item = new ItemStack(mat, 1);

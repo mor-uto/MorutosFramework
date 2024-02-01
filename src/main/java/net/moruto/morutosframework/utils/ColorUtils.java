@@ -27,8 +27,7 @@ public class ColorUtils {
     public static final String ITALIC = "&o";
     public static final String RESET = "&r";
 
-    private ColorUtils() {
-    }
+    private ColorUtils() {}
 
     public static String trans(String str) {
         return ChatColor.translateAlternateColorCodes('&', str);
