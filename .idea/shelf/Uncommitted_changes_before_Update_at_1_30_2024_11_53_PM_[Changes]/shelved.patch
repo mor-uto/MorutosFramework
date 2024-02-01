@@ -1,0 +1,19 @@
+Index: src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package net.moruto.morutosframework.plugin;\r\n\r\nimport net.moruto.morutosframework.command.CommandsManager;\r\nimport net.moruto.morutosframework.command.MCommand;\r\nimport net.moruto.morutosframework.listener.ListenersManager;\r\nimport net.moruto.morutosframework.listener.MListener;\r\nimport net.moruto.morutosframework.menu.MenusManager;\r\nimport org.bukkit.plugin.java.JavaPlugin;\r\n\r\npublic abstract class MorutosPlugin extends JavaPlugin {\r\n    private ListenersManager listenersManager;\r\n    private MenusManager menusManager;\r\n    private CommandsManager commandsManager;\r\n\r\n    public static MorutosPlugin getInstance() {\r\n        return (MorutosPlugin)JavaPlugin.getPlugin(MorutosPlugin.class);\r\n    }\r\n\r\n    public void onEnable() {\r\n        this.listenersManager = new ListenersManager();\r\n        this.menusManager = new MenusManager();\r\n        this.commandsManager = new CommandsManager();\r\n        this.enable();\r\n    }\r\n\r\n    public void onDisable() {\r\n        this.disable();\r\n    }\r\n\r\n    public abstract void enable();\r\n\r\n    public abstract void disable();\r\n\r\n    public abstract String getPrefix();\r\n\r\n    public void registerCommand(MCommand command) {\r\n        this.commandsManager.register(command);\r\n    }\r\n\r\n    public void registerListener(MListener listener) {\r\n        this.listenersManager.register(listener);\r\n    }\r\n\r\n    public ListenersManager getListenersManager() {\r\n        return this.listenersManager;\r\n    }\r\n\r\n    public MenusManager getMenusManager() {\r\n        return this.menusManager;\r\n    }\r\n\r\n    public CommandsManager getCommandsManager() {\r\n        return this.commandsManager;\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java b/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java
+--- a/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java	(revision 8b6f68c01a0d1463457c136fb7fd01469c877dc0)
++++ b/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java	(date 1706651582811)
+@@ -13,7 +13,7 @@
+     private CommandsManager commandsManager;
+ 
+     public static MorutosPlugin getInstance() {
+-        return (MorutosPlugin)JavaPlugin.getPlugin(MorutosPlugin.class);
++        return JavaPlugin.getPlugin(MorutosPlugin.class);
+     }
+ 
+     public void onEnable() {
