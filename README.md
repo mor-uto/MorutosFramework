@@ -23,5 +23,3 @@ maven
 
 ## Usage
 check the wiki to learn how to use it
-
-# Javadocs
