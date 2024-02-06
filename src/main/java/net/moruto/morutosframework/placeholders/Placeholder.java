@@ -3,18 +3,24 @@ package net.moruto.morutosframework.placeholders;
 import java.util.HashMap;
 
 public interface Placeholder {
-    HashMap<String, Object> placeholder = new HashMap<>();
-    String placeholderName = null;
-
-    default void setPlaceholder(String placeholderName, Object object) {
-        this.placeholder.put(placeholderName, object);
-    }
+    placeholder setPlaceholder();
 
     default String getName() {
-        return placeholderName;
+        return setPlaceholder().name();
     }
 
     default Object getValue() {
-        return placeholder.get(placeholderName);
+        return setPlaceholder().object();
+    }
+
+    record placeholder(String name, Object object) {
+        @Override
+        public String name() {
+            return name;
+        }
+        @Override
+        public Object object() {
+            return object;
+        }
     }
 }

@@ -67,6 +67,12 @@
           <version>1.17.1-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
+
+      <dependency>
+          <groupId>net.dv8tion</groupId>
+          <artifactId>JDA</artifactId>
+          <version>5.0.0-beta.18</version>
+      </dependency>
   </dependencies>
 
     <distributionManagement>

@@ -1,7 +1,6 @@
 net\moruto\morutosframework\menu\MenuHolder.class
 net\moruto\morutosframework\menu\MenusManager.class
 net\moruto\morutosframework\listener\ListenersManager.class
-net\moruto\morutosframework\exceptions\ListenerRegistrationException.class
 net\moruto\morutosframework\menu\Menu.class
 net\moruto\morutosframework\plugin\MorutosPlugin.class
 net\moruto\morutosframework\utils\ConsoleUtils.class

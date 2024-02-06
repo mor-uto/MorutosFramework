@@ -3,7 +3,6 @@ package net.moruto.morutosframework.command;
 import net.moruto.morutosframework.exceptions.CommandRegistrationException;
 import net.moruto.morutosframework.plugin.MorutosPlugin;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
 import org.bukkit.command.CommandMap;
 
 import java.lang.reflect.Field;
@@ -24,11 +23,9 @@ public class CommandsManager {
         }
     }
 
-    public void addCommand(MCommand command) {
-        commands.add(command);
-    }
-    public void removeCommand(MCommand command) {
+    public void unregister(MCommand command) {
         commands.remove(command);
+        command.unregister(commandMap);
     }
 
     public List<MCommand> getCommands() {
@@ -38,7 +35,7 @@ public class CommandsManager {
     public void register(MCommand command) {
         try {
             if (commands.contains(command) && commandMap.getCommand(command.getName().toLowerCase()) != null) {
-                throw new CommandRegistrationException("Command or command with this name is already registered");
+                throw new CommandRegistrationException("Command with this name is already registered");
             }
 
             commands.add(command);

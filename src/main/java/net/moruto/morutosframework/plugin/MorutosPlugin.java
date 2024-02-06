@@ -17,6 +17,7 @@ public abstract class MorutosPlugin extends JavaPlugin {
         return JavaPlugin.getPlugin(MorutosPlugin.class);
     }
 
+    @Override
     public void onEnable() {
         this.listenersManager = new ListenersManager();
         this.menusManager = new MenusManager();
@@ -24,6 +25,7 @@ public abstract class MorutosPlugin extends JavaPlugin {
         this.enable();
     }
 
+    @Override
     public void onDisable() {
         this.disable();
     }

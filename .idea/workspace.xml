@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6766aa4d-1f32-46ea-9954-8b2e015aa439" name="Changes" comment="updated...">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/command/MCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/menu/Menu.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/annotations/Incomplete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/DiscordBot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/command/BotCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/command/CommandsManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/utils/JSONSerializable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/command/CommandsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/command/CommandsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/exceptions/ListenerRegistrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/placeholders/Placeholder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/placeholders/Placeholder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MorutosFramework-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MorutosFramework-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/MorutosFramework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/MorutosFramework-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/command/CommandsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/command/CommandsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/exceptions/ListenerRegistrationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-MorutosFramework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-MorutosFramework-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +32,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
       </list>
@@ -57,19 +73,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.MorutosFramework [deploy].executor": "Run",
-    "Maven.MorutosFramework [package].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/moham/IdeaProjects/MorutosFramework",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.MorutosFramework [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MorutosFramework [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moham/IdeaProjects/MorutosFramework&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MorutosFramework package" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
