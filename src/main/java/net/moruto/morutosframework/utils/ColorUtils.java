@@ -3,6 +3,8 @@ package net.moruto.morutosframework.utils;
 import net.md_5.bungee.api.ChatColor;
 
 public class ColorUtils {
+    private ColorUtils() {}
+
     public static final String BLACK = "&0";
     public static final String DARK_BLUE = "&1";
     public static final String DARK_GREEN = "&2";
@@ -26,8 +28,6 @@ public class ColorUtils {
     public static final String UNDERLINE = "&n";
     public static final String ITALIC = "&o";
     public static final String RESET = "&r";
-
-    private ColorUtils() {}
 
     public static String trans(String str) {
         return ChatColor.translateAlternateColorCodes('&', str);
