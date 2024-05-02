@@ -17,8 +17,8 @@ public abstract class MCommand extends BukkitCommand implements TabCompleter {
         super(name);
     }
 
-    public void enableRequiresPlayer() {
-        this.requirePlayer = true;
+    public void setRequiresPlayer(boolean requirePlayer) {
+        this.requirePlayer = requirePlayer;
     }
 
     public abstract void execute(CommandSender sender, String[] args);
