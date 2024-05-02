@@ -8,16 +8,13 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.entity.Player;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class MCommand extends BukkitCommand implements TabCompleter {
-    private boolean requirePlayer;
-
-    public MCommand(String name) {
+    private final boolean requirePlayer;
+    public MCommand(String name, boolean requirePlayer) {
         super(name);
-    }
-
-    public void setRequiresPlayer(boolean requirePlayer) {
         this.requirePlayer = requirePlayer;
     }
 
@@ -27,16 +24,15 @@ public abstract class MCommand extends BukkitCommand implements TabCompleter {
     public boolean execute(CommandSender sender, String alias, String[] args) {
         if (!this.requirePlayer) {
             this.execute(sender, args);
-        } else {
-            if (!(sender instanceof Player)) {
-                sender.sendMessage(ColorUtils.trans(MorutosPlugin.getInstance().getPrefix() + " &ca player is required to use this command!"));
-            }
+            return true;
         }
+
+        if (!(sender instanceof Player)) sender.sendMessage(ColorUtils.trans(MorutosPlugin.getInstance().getPrefix() + " &ca player is required to use this command!"));
         return true;
     }
 
     @Override
     public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] args) {
-        return onTabComplete(commandSender, args);
+        return new ArrayList<>(onTabComplete(commandSender, args));
     }
 }
