@@ -11,24 +11,26 @@ public class ConfigFile {
     private final YamlConfiguration config;
     private final File file;
 
-    public ConfigFile(File file) {
+    public ConfigFile(File file, boolean createIfNotExist) {
         this.file = file;
+
+        if (createIfNotExist) {
+            try {
+                if (!file.exists()) {
+                    file.createNewFile();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+
         this.config = YamlConfiguration.loadConfiguration(file);
     }
 
     public void moveTo(Path path) {
         try {
             Files.move(path, file.toPath());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void createIfDoesntExist() {
-        try {
-            if (!file.exists()) {
-                file.createNewFile();
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }
