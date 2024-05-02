@@ -6,7 +6,7 @@ import net.moruto.morutosframework.plugin.MorutosPlugin;
 import org.bukkit.Bukkit;
 
 public class ListenersManager {
-    private final List<MListener> listeners = new ArrayList();
+    private final List<MListener> listeners = new ArrayList<>();
 
     public void register(MListener listener) {
         this.listeners.add(listener);
