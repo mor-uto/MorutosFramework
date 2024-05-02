@@ -2,6 +2,7 @@ package net.moruto.morutosframework.plugin;
 
 import net.moruto.morutosframework.command.CommandsManager;
 import net.moruto.morutosframework.command.MCommand;
+import net.moruto.morutosframework.exceptions.CommandRegistrationException;
 import net.moruto.morutosframework.listener.ListenersManager;
 import net.moruto.morutosframework.listener.MListener;
 import net.moruto.morutosframework.menu.MenusManager;
@@ -37,7 +38,11 @@ public abstract class MorutosPlugin extends JavaPlugin {
     public abstract String getPrefix();
 
     public void registerCommand(MCommand command) {
-        this.commandsManager.register(command);
+        try {
+            this.commandsManager.register(command);
+        } catch (CommandRegistrationException e) {
+            e.printStackTrace();
+        }
     }
 
     public void registerListener(MListener listener) {
