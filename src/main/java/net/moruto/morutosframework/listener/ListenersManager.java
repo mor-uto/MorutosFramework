@@ -1,9 +1,10 @@
 package net.moruto.morutosframework.listener;
 
-import java.util.ArrayList;
-import java.util.List;
 import net.moruto.morutosframework.plugin.MorutosPlugin;
 import org.bukkit.Bukkit;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ListenersManager {
     private final List<MListener> listeners = new ArrayList<>();
@@ -15,7 +16,6 @@ public class ListenersManager {
 
     public void unregister(MListener listener) {
         this.listeners.remove(listener);
-        listener.unregister();
     }
 
     public List<MListener> getListeners() {
