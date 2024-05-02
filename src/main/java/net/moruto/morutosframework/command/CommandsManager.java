@@ -32,22 +32,14 @@ public class CommandsManager {
         return commands;
     }
 
-    public void register(MCommand command) {
-        try {
-            if (commands.contains(command) && commandMap.getCommand(command.getName().toLowerCase()) != null) {
-                throw new CommandRegistrationException("Command with this name is already registered");
-            }
+    public void register(MCommand command) throws CommandRegistrationException {
+        if (commands.contains(command) && commandMap.getCommand(command.getName().toLowerCase()) != null) throw new CommandRegistrationException("Command with this name is already registered");
 
-            commands.add(command);
-            commandMap.register(command.getName(), command);
+        commands.add(command);
+        commandMap.register(command.getName(), command);
 
-            if (commandMap.getCommand(command.getName()) == null) {
-                throw new CommandRegistrationException("Command registration failed");
-            }
+        if (commandMap.getCommand(command.getName()) == null) throw new CommandRegistrationException("Command registration failed");
 
-            MorutosPlugin.getInstance().getCommand(command.getName()).setTabCompleter(command);
-        } catch (CommandRegistrationException e) {
-            e.printStackTrace();
-        }
+        MorutosPlugin.getInstance().getCommand(command.getName()).setTabCompleter(command);
     }
 }
