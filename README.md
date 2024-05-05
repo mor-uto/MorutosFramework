@@ -22,4 +22,4 @@ maven
 ```
 
 ## Usage
-check the wiki to learn how to use it
+no explaination atm so read it urself and understand :)
