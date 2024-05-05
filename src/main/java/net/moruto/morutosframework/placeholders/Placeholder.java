@@ -1,7 +1,5 @@
 package net.moruto.morutosframework.placeholders;
 
-import java.util.HashMap;
-
 public interface Placeholder {
     placeholder setPlaceholder();
 

@@ -9,8 +9,7 @@ public class MenuListener implements MListener {
     @EventHandler
     private void onMenuClick(InventoryClickEvent event) {
         InventoryHolder holder = event.getInventory().getHolder();
-        if (holder instanceof Menu) {
-            Menu menu = (Menu)holder;
+        if (holder instanceof Menu menu) {
             event.setCancelled(true);
             if (event.getCurrentItem() == null) {
                 return;

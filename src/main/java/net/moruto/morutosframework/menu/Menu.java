@@ -12,16 +12,17 @@ import org.bukkit.inventory.ItemStack;
 
 public abstract class Menu implements InventoryHolder {
     private final MenuHolder menuHolder;
-    private Inventory inventory;
-    private final ItemStack FILLER_GLASS;
+    private final Inventory inventory;
+    private final ItemStack FILLER_GLASS = ItemBuilder.createBasic(Material.GRAY_STAINED_GLASS_PANE, "");
     private final String name;
     private final int size;
 
     public Menu(MenuHolder menuHolder, String name, int size) {
-        this.FILLER_GLASS = ItemBuilder.createBasic(Material.GRAY_STAINED_GLASS_PANE, "");
         this.menuHolder = menuHolder;
         this.name = name;
         this.size = size;
+        this.inventory = Bukkit.createInventory(null, size, ColorUtils.trans(name));
+
         MorutosPlugin.getInstance().getMenusManager().addMenu(this);
     }
 
@@ -30,9 +31,8 @@ public abstract class Menu implements InventoryHolder {
     public abstract void setMenuItems();
 
     public void open() {
-        this.inventory = Bukkit.createInventory(this, this.size, ColorUtils.trans(this.name));
-        this.setMenuItems();
-        this.menuHolder.getOwner().openInventory(this.inventory);
+        setMenuItems();
+        menuHolder.getOwner().openInventory(this.inventory);
     }
 
     public int getSize() {
@@ -44,16 +44,15 @@ public abstract class Menu implements InventoryHolder {
     }
 
     public Inventory getInventory() {
-        return this.inventory;
+        return inventory;
     }
 
     public void setFillerGlass() {
-        for(int i = 0; i < this.size; ++i) {
+        for (int i = 0; i < this.size; ++i) {
             if (this.inventory.getItem(i) == null) {
                 this.inventory.setItem(i, this.FILLER_GLASS);
             }
         }
-
     }
 
     public String getName() {
