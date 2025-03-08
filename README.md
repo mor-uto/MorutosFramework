@@ -1,25 +1,44 @@
-# MorutosFramework
-WIP framework (work in progress)
+# **Moruto's Framework**
+🚧 **Work in Progress (WIP)** 🚧
 
-## About:
-an open-source and easy to use framework that provides a lot of this, at first it was just a simple library for personal use and i made it bigger and bigger and decided to make a framework and release it.
+## **About**
+**Moruto's Framework** is an open-source, easy-to-use framework designed to provide powerful and flexible utilities. Originally created as a simple personal-use library, it has grown into a more advanced framework ready for public release.
 
-## Installation:
-maven
+## **Installation**
+
+### **Maven**
+To use **Moruto's Framework**, add the following repository and dependency to your `pom.xml`:
+
 ```xml
 <repository>
-        <id>github</id>
-        <name>GitHub Mor-uto Apache Maven Packages</name>
-        <url>https://maven.pkg.github.com/Mor-uto/MorutosFramework</url>
+    <id>mymavenrepo</id>
+    <url>https://mymavenrepo.com/repo/l6Ju9Dmjqrc1jU89nXPg/</url>
 </repository>
 
 <dependency>
-        <groupId>net.moruto</groupId>
-        <artifactId>MorutosFramework</artifactId>
-        <version>1.0</version>
-        <scope>compile</scope>
+    <groupId>me.moruto</groupId>
+    <artifactId>framework</artifactId>
+    <version>1.0</version>
+    <scope>compile</scope> <!-- Change to 'provided' if used in an environment like Spigot -->
 </dependency>
 ```
 
-## Usage
-no explaination atm so read it urself and understand :)
+### **Gradle** (Optional)
+If you’re using **Gradle**, you can add it like this:
+
+```gradle
+repositories {
+    maven { url 'https://mymavenrepo.com/repo/l6Ju9Dmjqrc1jU89nXPg/' }
+}
+
+dependencies {
+    implementation 'me.moruto:framework:1.0'
+}
+```
+
+## **Usage**
+📖 **Documentation Coming Soon!**  
+For now, feel free to explore the code and understand it yourself. More details will be added soon.
+
+---
+
