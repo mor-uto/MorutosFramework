@@ -1,6 +1,7 @@
 package me.moruto.framework.config;
 
 import org.bukkit.configuration.file.FileConfiguration;
+
 import java.lang.reflect.Field;
 
 public class ConfigManager {
@@ -22,10 +23,7 @@ public class ConfigManager {
                     field.setAccessible(true);
                     Object defaultValue = field.get(instance);
 
-                    if (!config.contains(path)) {
-                        config.set(path, defaultValue);
-                    }
-
+                    if (!config.contains(path)) config.set(path, defaultValue);
                     Object value = config.get(path);
                     field.set(instance, value);
                 } catch (IllegalAccessException e) {

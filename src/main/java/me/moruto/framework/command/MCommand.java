@@ -1,6 +1,6 @@
 package me.moruto.framework.command;
 
-import me.moruto.framework.plugin.MorutosPlugin;
+import me.moruto.framework.MorutosPlugin;
 import me.moruto.framework.utils.ColorUtils;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -8,31 +8,47 @@ import org.bukkit.command.TabCompleter;
 import org.bukkit.command.defaults.BukkitCommand;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public abstract class MCommand extends BukkitCommand implements TabCompleter {
     private final boolean requirePlayer;
-    public MCommand(String name, boolean requirePlayer) {
+    private final String permission;
+
+    public MCommand(String name, String permission, boolean requirePlayer) {
         super(name);
+        this.permission = permission;
         this.requirePlayer = requirePlayer;
     }
 
     public abstract void execute(CommandSender sender, String[] args);
-    public abstract List<String> onTabComplete(CommandSender sender, String[] args);
 
+    public List<String> tabSuggestions(CommandSender sender, String[] args) {
+        return Collections.emptyList();
+    }
+
+    public final void sendMessage(CommandSender sender, String message) {
+        sender.sendMessage(ColorUtils.trans(MorutosPlugin.getInstance().getPrefix() + " " + message));
+    }
+
+    @Override
     public boolean execute(CommandSender sender, String alias, String[] args) {
-        if (!requirePlayer) {
-            this.execute(sender, args);
+        if (requirePlayer && !(sender instanceof Player)) {
+            sendMessage(sender, "&cA player is required to use this command!");
             return true;
         }
 
-        if (!(sender instanceof Player)) sender.sendMessage(ColorUtils.trans(MorutosPlugin.getInstance().getPrefix() + " &ca player is required to use this command!"));
+        if (!sender.hasPermission(permission)) {
+            sendMessage(sender, "&cYou don't have permission for this command!");
+            return true;
+        }
+
+        execute(sender, args);
         return true;
     }
 
     @Override
-    public List<String> onTabComplete(CommandSender commandSender, Command command, String s, String[] args) {
-        return new ArrayList<>(onTabComplete(commandSender, args));
+    public final List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
+        return tabSuggestions(sender, args);
     }
 }

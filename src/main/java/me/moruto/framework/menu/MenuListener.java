@@ -1,21 +1,21 @@
 package me.moruto.framework.menu;
 
-import me.moruto.framework.listener.MListener;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.InventoryHolder;
 
-public class MenuListener implements MListener {
+public class MenuListener implements Listener {
     @EventHandler
     private void onMenuClick(InventoryClickEvent event) {
         InventoryHolder holder = event.getInventory().getHolder();
-        if (holder instanceof Menu menu) {
+        if (holder instanceof Menu) {
             event.setCancelled(true);
             if (event.getCurrentItem() == null) {
                 return;
             }
 
-            menu.handleMenu(event);
+            ((Menu) holder).handleMenu(event);
         }
     }
 }

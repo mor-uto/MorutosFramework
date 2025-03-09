@@ -1,6 +1,6 @@
 package me.moruto.framework.utils;
 
-import me.moruto.framework.plugin.MorutosPlugin;
+import me.moruto.framework.MorutosPlugin;
 import org.bukkit.Bukkit;
 
 public class ConsoleUtils {

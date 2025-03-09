@@ -5,14 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="829152c0-c6df-4ba3-91e7-f3e966fa9baf" name="Changes" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/framework-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/CommandsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/CommandsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/MCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/MCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/exceptions/CommandRegistrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/http/HttpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/http/HttpResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/ListenersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/ListenersManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/MListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/MListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenuListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenusManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenusManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/placeholders/Placeholder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/MorutosPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ConsoleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ConsoleUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/CommandsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/CommandsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/MCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/MCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/exceptions/CommandRegistrationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpRequestType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpRequestType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/http/HttpResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/listener/ListenersManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/listener/ListenersManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/listener/MListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/listener/MListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenuHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenuHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenuListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenuListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenusManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/MenusManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/placeholders/Placeholder$placeholder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/placeholders/Placeholder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/plugin/MorutosPlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ConfigFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ConfigFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ConsoleUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ConsoleUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ItemBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ItemBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/framework-1.0-shaded.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-framework-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-framework-1.0.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +91,14 @@
     &quot;Maven.framework [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.framework [deploy].executor&quot;: &quot;Run&quot;,
     &quot;Maven.framework [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.framework [package].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -99,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741463669803</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1741488829442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741488829442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

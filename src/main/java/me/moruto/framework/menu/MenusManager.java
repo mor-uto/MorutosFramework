@@ -1,6 +1,6 @@
 package me.moruto.framework.menu;
 
-import me.moruto.framework.plugin.MorutosPlugin;
+import me.moruto.framework.MorutosPlugin;
 import me.moruto.framework.utils.ColorUtils;
 
 import java.util.ArrayList;
