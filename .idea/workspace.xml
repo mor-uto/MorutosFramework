@@ -5,92 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="829152c0-c6df-4ba3-91e7-f3e966fa9baf" name="Changes" comment="Updated">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/annotations/Incomplete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/command/CommandsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/CommandsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/command/MCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/MCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/exceptions/CommandRegistrationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/exceptions/CommandRegistrationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/http/HttpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/http/HttpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/http/HttpRequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/http/HttpRequestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/http/HttpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/http/HttpResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/DiscordBot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/command/BotCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/jda/command/CommandsManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/listener/ListenersManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/ListenersManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/listener/MListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/listener/MListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/menu/MenuHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenuHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/menu/MenuListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenuListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/menu/MenusManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/MenusManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/placeholders/Placeholder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/placeholders/Placeholder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/plugin/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/utils/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ColorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/utils/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ConfigFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/utils/ConsoleUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ConsoleUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/moruto/morutosframework/utils/ItemBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ItemBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MorutosFramework-1.0-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/MorutosFramework-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/command/CommandsManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/command/MCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/exceptions/CommandRegistrationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/listener/ListenersManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/listener/MListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/menu/Menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/menu/MenuHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/menu/MenuListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/menu/MenusManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/placeholders/Placeholder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/plugin/MorutosPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/utils/ColorUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/utils/ConfigFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/utils/ConsoleUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/net/moruto/morutosframework/utils/ItemBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/plugin/MorutosPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/framework-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-MorutosFramework-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-framework-1.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mor-uto"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mor-uto&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mor-uto/MorutosFramework",
-    "accountId": "bc004507-b479-42e7-acad-68cc7678d8d1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mor-uto/MorutosFramework&quot;,
+    &quot;accountId&quot;: &quot;bc004507-b479-42e7-acad-68cc7678d8d1&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2u328G8CWrMZeN1IAZKC75r3OsF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.MorutosFramework [deploy].executor": "Run",
-    "Maven.MorutosFramework [package].executor": "Run",
-    "Maven.framework [clean].executor": "Run",
-    "Maven.framework [deploy].executor": "Run",
-    "Maven.framework [install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.MorutosFramework [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.MorutosFramework [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.framework [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.framework [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.framework [install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -108,7 +83,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741463458433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1741463480030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741463480030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1741463669803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741463669803</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

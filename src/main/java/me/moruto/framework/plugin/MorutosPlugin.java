@@ -2,6 +2,7 @@ package me.moruto.framework.plugin;
 
 import me.moruto.framework.command.CommandsManager;
 import me.moruto.framework.command.MCommand;
+import me.moruto.framework.config.ConfigManager;
 import me.moruto.framework.exceptions.CommandRegistrationException;
 import me.moruto.framework.listener.ListenersManager;
 import me.moruto.framework.listener.MListener;
@@ -13,6 +14,7 @@ public abstract class MorutosPlugin extends JavaPlugin {
     private ListenersManager listenersManager;
     private MenusManager menusManager;
     private CommandsManager commandsManager;
+    private ConfigManager configManager;
 
     public static MorutosPlugin getInstance() {
         return JavaPlugin.getPlugin(MorutosPlugin.class);
@@ -20,10 +22,13 @@ public abstract class MorutosPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        configManager = new ConfigManager(getConfig());
         this.listenersManager = new ListenersManager();
         this.menusManager = new MenusManager();
         this.commandsManager = new CommandsManager();
         this.enable();
+        listenersManager.getListeners().forEach(listener -> configManager.loadConfig(listener));
+        commandsManager.getCommands().forEach(command -> configManager.loadConfig(command));
     }
 
     @Override
