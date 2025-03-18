@@ -38,7 +38,7 @@ public abstract class MCommand extends BukkitCommand implements TabCompleter {
             return true;
         }
 
-        if (!sender.hasPermission(permission)) {
+        if (permission != null && !sender.hasPermission(permission)) {
             sendMessage(sender, "&cYou don't have permission for this command!");
             return true;
         }

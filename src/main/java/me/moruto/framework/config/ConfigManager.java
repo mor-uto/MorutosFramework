@@ -17,7 +17,7 @@ public class ConfigManager {
         for (Field field : clazz.getDeclaredFields()) {
             if (field.isAnnotationPresent(ConfigEntry.class)) {
                 ConfigEntry entry = field.getAnnotation(ConfigEntry.class);
-                String path = entry.path();
+                String path = entry.value();
 
                 try {
                     field.setAccessible(true);

@@ -19,11 +19,11 @@ To use **Moruto's Framework**, add the following repository and dependency to yo
     <groupId>me.moruto</groupId>
     <artifactId>framework</artifactId>
     <version>1.0</version>
-    <scope>compile</scope> <!-- Change to 'provided' if used in an environment like Spigot -->
+    <scope>provided</scope>
 </dependency>
 ```
 
-### **Gradle** (Optional)
+### **Gradle**
 If you’re using **Gradle**, you can add it like this:
 
 ```gradle

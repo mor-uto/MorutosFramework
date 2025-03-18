@@ -2,6 +2,9 @@ package me.moruto.framework.utils;
 
 import net.md_5.bungee.api.ChatColor;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class ColorUtils {
     private ColorUtils() {}
 
@@ -29,10 +32,23 @@ public class ColorUtils {
     public static final String ITALIC = "&o";
     public static final String RESET = "&r";
 
+    private static final Pattern HEX_PATTERN = Pattern.compile("&#([A-Fa-f0-9]{6})");
+
     public static String trans(String str) {
         return ChatColor.translateAlternateColorCodes('&', str);
     }
     public static String strip(String str) {
         return ChatColor.stripColor(str);
+    }
+
+    public static String transHex(String str) {
+        Matcher matcher = HEX_PATTERN.matcher(str);
+        StringBuffer sb = new StringBuffer();
+        while (matcher.find()) {
+            String hexColor = matcher.group(1);
+            matcher.appendReplacement(sb, ChatColor.of("#" + hexColor).toString());
+        }
+        matcher.appendTail(sb);
+        return trans(sb.toString());
     }
 }
