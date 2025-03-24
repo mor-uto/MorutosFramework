@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="829152c0-c6df-4ba3-91e7-f3e966fa9baf" name="Changes" comment="Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/MCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/MCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ColorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/MCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/MCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741492381433</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1742300544400</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742300544400</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
