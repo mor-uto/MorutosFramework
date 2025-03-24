@@ -7,60 +7,61 @@ import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 public class Requests {
-    public static HttpResponse get(String url) {
-        return request(url, "GET", null, null);
+    public static HttpResponse get(String url, RequestOptions options) {
+        return request(url, "GET", options);
     }
 
-    public static HttpResponse post(String url, Map<String, String> postDataMap, String payload) {
-        return request(url, "POST", postDataMap, payload);
+    public static HttpResponse post(String url, RequestOptions options) {
+        return request(url, "POST", options);
     }
 
-    public static HttpResponse put(String url, Map<String, String> postDataMap, String payload) {
-        return request(url, "PUT", postDataMap, payload);
+    public static HttpResponse put(String url, RequestOptions options) {
+        return request(url, "PUT", options);
     }
 
-    public static HttpResponse delete(String url) {
-        return request(url, "DELETE", null, null);
+    public static HttpResponse delete(String url, RequestOptions options) {
+        return request(url, "DELETE", options);
     }
 
-    public static HttpResponse patch(String url, Map<String, String> postDataMap, String payload) {
-        return request(url, "PATCH", postDataMap, payload);
+    public static HttpResponse patch(String url, RequestOptions options) {
+        return request(url, "PATCH", options);
     }
 
-    private static HttpResponse request(String url, String method, Map<String, String> postDataMap, String payload) {
+    private static HttpResponse request(String url, String method, RequestOptions options) {
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
             connection.setRequestMethod(method);
             connection.setDoInput(true);
+            connection.setConnectTimeout(options.getConnectTimeout());
+            connection.setReadTimeout(options.getReadTimeout());
 
-            if ((postDataMap != null && !postDataMap.isEmpty()) || payload != null) {
+            for (Map.Entry<String, String> header : options.getHeaders().entrySet()) {
+                connection.setRequestProperty(header.getKey(), header.getValue());
+            }
+
+            if (options.getPayload() != null) {
                 connection.setDoOutput(true);
                 try (OutputStream os = connection.getOutputStream()) {
-                    if (payload != null) {
-                        os.write(payload.getBytes(StandardCharsets.UTF_8));
-                    } else {
-                        StringBuilder postDataStringBuilder = new StringBuilder();
-                        for (Map.Entry<String, String> entry : postDataMap.entrySet()) {
-                            postDataStringBuilder.append(entry.getKey()).append("=").append(entry.getValue()).append("&");
-                        }
-                        String postData = postDataStringBuilder.substring(0, postDataStringBuilder.length() - 1);
-                        os.write(postData.getBytes(StandardCharsets.UTF_8));
-                    }
+                    os.write(options.getPayload().getBytes(StandardCharsets.UTF_8));
                 }
             }
 
+            int responseCode = connection.getResponseCode();
             StringBuilder response = new StringBuilder();
-            try (BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(
+                    responseCode < HttpURLConnection.HTTP_BAD_REQUEST ?
+                            connection.getInputStream() :
+                            connection.getErrorStream()))) {
                 String line;
                 while ((line = in.readLine()) != null) {
                     response.append(line);
                 }
             }
 
-            return new HttpResponse(response.toString(), connection.getResponseCode());
+            return new HttpResponse(response.toString(), responseCode);
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+            return new HttpResponse("", -1);
         }
     }
 }
