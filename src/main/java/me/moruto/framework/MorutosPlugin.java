@@ -18,7 +18,7 @@ public abstract class MorutosPlugin extends JavaPlugin {
     }
 
     @Override
-    public void onEnable() {
+    public final void onEnable() {
         ConfigManager configManager = new ConfigManager(getConfig());
         listenersManager = new ListenersManager();
         menusManager = new MenusManager();
@@ -31,15 +31,14 @@ public abstract class MorutosPlugin extends JavaPlugin {
     }
 
     @Override
-    public void onDisable() {
+    public final void onDisable() {
         commandsManager.unregisterAll();
         listenersManager.unregisterAll();
         onPluginDisable();
     }
 
-    protected abstract void onPluginEnable();
-
-    protected abstract void onPluginDisable();
+    protected void onPluginEnable() {}
+    protected void onPluginDisable() {}
 
     public abstract String getPrefix();
 

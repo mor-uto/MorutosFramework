@@ -1,9 +1,8 @@
-me\moruto\framework\http\HttpRequest.class
 me\moruto\framework\menu\MenuListener.class
 me\moruto\framework\utils\ItemBuilder.class
-me\moruto\framework\http\HttpRequestType.class
 me\moruto\framework\http\HttpResponse.class
 me\moruto\framework\command\MCommand.class
+me\moruto\framework\http\Requests.class
 me\moruto\framework\menu\Menu.class
 me\moruto\framework\MorutosPlugin.class
 me\moruto\framework\config\ConfigEntry.class
