@@ -46,9 +46,13 @@ public class ColorUtils {
         StringBuffer sb = new StringBuffer();
         while (matcher.find()) {
             String hexColor = matcher.group(1);
-            matcher.appendReplacement(sb, ChatColor.of("#" + hexColor).toString());
+            matcher.appendReplacement(sb, translateHexToLegacy(hexColor));
         }
         matcher.appendTail(sb);
-        return trans(sb.toString());
+        return ChatColor.translateAlternateColorCodes('&', sb.toString());
+    }
+
+    private static String translateHexToLegacy(String hex) {
+        return ChatColor.RESET.toString();
     }
 }

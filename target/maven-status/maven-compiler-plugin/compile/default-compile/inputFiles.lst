@@ -1,5 +1,5 @@
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\config\ConfigEntry.java
-D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\http\HttpRequestType.java
+D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\http\Requests.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\menu\MenuHolder.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\MorutosPlugin.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\http\HttpResponse.java
@@ -8,8 +8,8 @@ D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\menu
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\command\CommandsManager.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\config\ConfigManager.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\utils\ConfigFile.java
+D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\http\RequestOptions.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\menu\Menu.java
-D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\http\HttpRequest.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\utils\ConsoleUtils.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\listener\ListenersManager.java
 D:\Projects\IdeaProjects\MorutosFramework\src\main\java\me\moruto\framework\command\MCommand.java

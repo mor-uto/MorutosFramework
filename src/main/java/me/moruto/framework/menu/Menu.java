@@ -13,7 +13,7 @@ import org.bukkit.inventory.ItemStack;
 public abstract class Menu implements InventoryHolder {
     private final MenuHolder menuHolder;
     private final Inventory inventory;
-    private final ItemStack FILLER_GLASS = ItemBuilder.createBasic(Material.GRAY_STAINED_GLASS_PANE, "");
+    private final ItemStack FILLER_GLASS = ItemBuilder.createBasic(Material.STAINED_GLASS_PANE, "");
     private final String name;
     private final int size;
 

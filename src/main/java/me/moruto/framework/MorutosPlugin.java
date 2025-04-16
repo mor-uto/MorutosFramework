@@ -7,11 +7,15 @@ import me.moruto.framework.listener.ListenersManager;
 import me.moruto.framework.menu.MenusManager;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.reflections.Reflections;
+
+import java.lang.reflect.InvocationTargetException;
 
 public abstract class MorutosPlugin extends JavaPlugin {
     private ListenersManager listenersManager;
     private MenusManager menusManager;
     private CommandsManager commandsManager;
+    private ConfigManager configManager;
 
     public static MorutosPlugin getInstance() {
         return JavaPlugin.getPlugin(MorutosPlugin.class);
@@ -19,7 +23,7 @@ public abstract class MorutosPlugin extends JavaPlugin {
 
     @Override
     public final void onEnable() {
-        ConfigManager configManager = new ConfigManager(getConfig());
+        configManager = new ConfigManager(getConfig());
         listenersManager = new ListenersManager();
         menusManager = new MenusManager();
         commandsManager = new CommandsManager();
@@ -60,5 +64,29 @@ public abstract class MorutosPlugin extends JavaPlugin {
 
     public CommandsManager getCommandsManager() {
         return commandsManager;
+    }
+
+    public ConfigManager getConfigManager() {
+        return configManager;
+    }
+
+    public void autoRegisterListeners(String packageName) {
+        for (Class<?> clazz : new Reflections(packageName).getSubTypesOf(Listener.class)) {
+            try {
+                registerListener((Listener) clazz.getDeclaredConstructor().newInstance());
+            } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void autoRegisterCommands(String packageName) {
+        for (Class<?> clazz : new Reflections(packageName).getSubTypesOf(MCommand.class)) {
+            try {
+                registerCommand((MCommand) clazz.getDeclaredConstructor().newInstance());
+            } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
