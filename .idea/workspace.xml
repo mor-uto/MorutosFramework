@@ -6,18 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="829152c0-c6df-4ba3-91e7-f3e966fa9baf" name="Changes" comment="Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/MorutosPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/MorutosPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/CommandsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/command/CommandsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/config/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/menu/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/moruto/framework/utils/ColorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/CommandsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/command/CommandsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/menu/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/me/moruto/framework/utils/ColorUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/framework-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/framework-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742834357812</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1744811839486</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744811839486</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
