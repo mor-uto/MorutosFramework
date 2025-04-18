@@ -16,7 +16,7 @@ To use **Moruto's Framework**, add the following repository and dependency to yo
 </repository>
 
 <dependency>
-    <groupId>me.moruto</groupId>
+    <groupId>lol.moruto</groupId>
     <artifactId>framework</artifactId>
     <version>1.0</version>
     <scope>provided</scope>
@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'me.moruto:framework:1.0'
+    implementation 'lol.moruto:framework:1.0'
 }
 ```
 
